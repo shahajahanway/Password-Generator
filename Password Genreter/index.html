@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator | Create by Shahajahan</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="app-name">
+      <h4>Password Generator</h4>
+    </div>
+    <div class="password-box">
+      <input type="text" class="password" disabled placeholder="Your password...">
+      <i class="material-icons" id="copy-btn">content_copy</i>
+    </div>
+    <div class="indicator" id="weak"></div>
+
+    <div class="passLength">
+      <p>Password Length</p>
+      <span class="length-value">6</span>
+      <input type="range" class="passwordLength" min="6" max="32" value="6">
+    </div>
+
+    <div class="password-setting">
+      <p>Password Settings</p>
+      <div class="option">
+        <input type="checkbox" id="lowercase" checked>
+        <label for="lowercase">Lowercase (a-z)</label>
+      </div>
+      <div class="option">
+        <input type="checkbox" id="uppercase">
+        <label for="uppercase">Uppercase (A-Z)</label>
+      </div>
+      <div class="option">
+        <input type="checkbox" id="numbers">
+        <label for="numbers">Numbers (0-9)</label>
+      </div>
+      <div class="option">
+        <input type="checkbox" id="symbols">
+        <label for="symbols">Symbols (!@#$%)</label>
+      </div>
+    </div>
+
+    <button class="generate-btn">Generate Password</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

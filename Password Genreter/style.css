@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #4285FA;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.app-name {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.password-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px 0;
+}
+
+.password-box input {
+  all: unset;
+  flex: 1;
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+#copy-btn {
+  cursor: pointer;
+  color: #4285FA;
+}
+
+.indicator {
+  height: 5px;
+  background: lightgrey;
+  border-radius: 30px;
+  margin: 10px 0;
+}
+
+.passLength {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.passwordLength {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.password-setting {
+  margin-top: 15px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.option input {
+  margin-right: 10px;
+}
+
+.generate-btn {
+  width: 100%;
+  background: #4285FA;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  .password-box {
+    padding: 8px;
+  }
+
+  .generate-btn {
+    padding: 12px;
+  }
+}
